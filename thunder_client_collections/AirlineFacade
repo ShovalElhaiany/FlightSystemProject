@@ -1,0 +1,113 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "AirlineFacade",
+    "dateExported": "2023-08-26T15:02:43.398Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5684a001-b5a7-4ae0-bb65-c47595971069",
+            "colId": "8140fd3d-62cd-4c4e-a2bd-d4a3dc5cec67",
+            "containerId": "",
+            "name": "update_airline",
+            "url": "http://127.0.0.1:5000/airline/airlines/1",
+            "method": "PUT",
+            "sortNum": 10000,
+            "created": "2023-08-25T01:07:39.459Z",
+            "modified": "2023-08-25T01:07:39.459Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"country_id\": 1,\n  \"id\": 1,\n  \"name\": \"Airline Company 1\",\n  \"user_id\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ffb16b63-92eb-4ea5-92bd-bdce2164e8dd",
+            "colId": "8140fd3d-62cd-4c4e-a2bd-d4a3dc5cec67",
+            "containerId": "",
+            "name": "add_flight",
+            "url": "http://127.0.0.1:5000/airline/flights",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-25T01:20:41.867Z",
+            "modified": "2023-08-25T01:20:41.867Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"airline_company_id\": 1, \"origin_country_id\": 1, \"destination_country_id\": 2, \"departure_time\": \"2023-06-20T10:00:00\", \"landing_time\": \"2023-06-20T12:00:00\", \"remaining_tickets\": 150\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "08d68073-7bf7-4051-862a-8e08e228bd10",
+            "colId": "8140fd3d-62cd-4c4e-a2bd-d4a3dc5cec67",
+            "containerId": "",
+            "name": "update_flight",
+            "url": "http://127.0.0.1:5000/airline/flights/2",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-08-25T01:22:26.730Z",
+            "modified": "2023-08-26T13:18:42.204Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"airline_company_id\": 9,\n    \"departure_time\": \"2023-07-24 15:45:00\",\n    \"destination_country_id\": 78,\n    \"id\": 2,\n    \"landing_time\": \"2023-07-24 17:45:00\",\n    \"origin_country_id\": 77,\n    \"remaining_tickets\": 171\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e82d6fa9-5198-43de-b314-848ff3416539",
+            "colId": "8140fd3d-62cd-4c4e-a2bd-d4a3dc5cec67",
+            "containerId": "",
+            "name": "delete_flight",
+            "url": "http://127.0.0.1:5000/airline/flights/59",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-08-25T01:23:35.475Z",
+            "modified": "2023-08-26T10:25:29.530Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "710a187a-a6fc-46f8-8462-bc2f31e6a527",
+            "colId": "8140fd3d-62cd-4c4e-a2bd-d4a3dc5cec67",
+            "containerId": "",
+            "name": "get_flights_by_airline_id",
+            "url": "http://127.0.0.1:5000/airline/flights/airline/5",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-08-25T01:31:28.873Z",
+            "modified": "2023-08-25T01:31:28.873Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b045c0a2-e58b-4789-85f5-914ef9035671",
+            "colId": "8140fd3d-62cd-4c4e-a2bd-d4a3dc5cec67",
+            "containerId": "",
+            "name": "add_airline",
+            "url": "http://127.0.0.1:5000/administrator/add_airlines",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-08-25T10:50:32.129Z",
+            "modified": "2023-08-26T10:39:20.424Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"country_id\": 2,\n  \"name\": \"Airasssdssline D\",\n  \"username\": \"asssssss\",\n  \"password\": \"ssssssasss\",\n  \"email\": \"sssas@mail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

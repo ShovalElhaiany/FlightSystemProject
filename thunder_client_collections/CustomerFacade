@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "CustomerFacade",
+    "dateExported": "2023-08-26T15:02:37.757Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "54d75fa9-1fd4-48ea-a9e2-e471959bb377",
+            "colId": "61889278-c934-4979-9cdc-c2cbe12a342c",
+            "containerId": "",
+            "name": "update_customer",
+            "url": "http://127.0.0.1:5000/customer/customers/10",
+            "method": "PUT",
+            "sortNum": 10000,
+            "created": "2023-08-23T16:40:16.331Z",
+            "modified": "2023-08-23T16:40:16.331Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"address\": \"876asd Spruce St\",\n  \"credit_card_no\": \"4567\",\n  \"first_name\": \"Matasthew\",\n  \"id\": 10,\n  \"last_name\": \"Taysadlor\",\n  \"phone_no\": \"555-dafs4568\",\n  \"user_id\": 9\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "876ccb3f-80e7-4db0-b412-7ea81f42304d",
+            "colId": "61889278-c934-4979-9cdc-c2cbe12a342c",
+            "containerId": "",
+            "name": "add_ticket",
+            "url": "http://127.0.0.1:5000/customer/tickets",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-25T00:35:30.246Z",
+            "modified": "2023-08-25T00:35:30.246Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"flight_id\": 10,\n  \"customer_id\": 2\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "071f2263-22b2-4e19-954a-51fa230e6dd2",
+            "colId": "61889278-c934-4979-9cdc-c2cbe12a342c",
+            "containerId": "",
+            "name": "delete_ticket",
+            "url": "http://127.0.0.1:5000/customer/tickets/54",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-08-25T00:55:14.936Z",
+            "modified": "2023-08-25T00:55:14.936Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "640a4940-6480-45ca-97f7-3e5f96c849f1",
+            "colId": "61889278-c934-4979-9cdc-c2cbe12a342c",
+            "containerId": "",
+            "name": "get_tickets_by_customer",
+            "url": "http://127.0.0.1:5000/customer/tickets/customer/2",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-08-25T00:57:00.903Z",
+            "modified": "2023-08-26T13:09:29.307Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
