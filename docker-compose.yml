@@ -4,7 +4,7 @@ services:
   db:
     image: shovalelhaiany/flight_system_project_db:latest
     ports:
-      - "3307:3306"
+      - "3306:3306"
     env_file: ./.env
     volumes:
       - db_data:/var/lib/mysql
@@ -21,19 +21,19 @@ services:
     env_file: ./.env
     volumes:
       - backend_data:/app/logs/
-    # depends_on:
-    #   db:
-    #     condition: service_healthy
-    #     restart: true
-  # frontend:
-  #   image: frontend:latest
-  #   ports:
-  #     - "3000:3000"
-  #   depends_on:
-  #     db:
-  #       condition: service_healthy
-# networks:
-#       mynetworks:
+    depends_on:
+      db:
+        condition: service_healthy
+        restart: true
+  frontend:
+    image: shovalelhaiany/flight_system_project_frontend:latest
+    ports:
+      - "3000:3000"
+    depends_on:
+      db:
+        condition: service_healthy
+networks:
+      mynetworks:
 volumes:
   db_data:
   backend_data:
