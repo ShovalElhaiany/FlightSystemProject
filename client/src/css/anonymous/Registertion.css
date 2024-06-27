@@ -1,0 +1,41 @@
+.form-body {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 1000px;
+  padding: 80px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: white;
+  
+
+  position: relative;
+  left: 55%;
+  transform: translate(-50%, 15%);
+
+  
+}
+
+.submit{
+  margin-top: 60px;
+  border: none;
+  border-radius: 100px;
+  background-color: #0091ff;
+  color: #fff;
+  padding: 10px;
+  transition: backgroundColor 0.3s ease;
+  padding: 15px;
+}
+
+.form-a{
+  margin-left:15px;
+  font-weight:600;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.form-h1{
+  margin-bottom:40px;
+}
