@@ -4,7 +4,7 @@ services:
   db:
     image: shovalelhaiany/flight_system_project_db:latest
     ports:
-      - "3306:3306"
+      - "3307:3306"
     env_file: ./.env
     volumes:
       - db_data:/var/lib/mysql
